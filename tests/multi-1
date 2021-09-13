@@ -52,7 +52,7 @@ $mksary -q -c EUC-JP tmp.eucjp.txt
 # Must produce the same contents.
 for i in tmp.patterns?; do
     cp $i tmp.patterns
-    fgrep -f tmp.patterns tmp.eucjp.txt > tmp.fgrep
+    fgrep -a -f tmp.patterns tmp.eucjp.txt > tmp.fgrep
     $multi   tmp.patterns tmp.eucjp.txt > tmp.sary
     cmp tmp.fgrep tmp.sary || exit 1
 done
