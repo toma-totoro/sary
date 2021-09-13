@@ -23,3 +23,5 @@ src/multi-test
 src/repeated-test
 src/sary
 src/search-benchmark
+tests/tmp.*
+tests/repeated.txt.ary
